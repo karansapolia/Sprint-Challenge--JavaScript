@@ -38,7 +38,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What is closure?
 
-- Ans - A function bundled together with its outer (lexical) scope is called a closure.
+- Ans - A function bundled together with its outer (lexical) scope is called a closure. In JS, closures are created everytime a function is created and it is also how you have access to an outer function's scope from an inner function.
 
 4. Describe the four rules of the 'this' keyword.
 
