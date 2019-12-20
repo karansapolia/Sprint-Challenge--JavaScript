@@ -30,13 +30,35 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+- Ans - While forEach() and map() both perform the same task on a given array, that is, they iterate through the array and perform a given function on every value of the array, .forEach() mutates the original array and replaces the current array member with the result of performing the given operation on it, in-place. .map() on the other hand does not mutate the original array. It creates a new array with the outputs of performing the operation on each value as the members of this array.
+
 2. What is the difference between a function and a method?
+
+- Ans - A function is a named block of a code that can be executed by calling it, using its name. A method is the same thing as a function but it is a member of ( is associated with) an object.
 
 3. What is closure?
 
+- Ans - A function bundled together with its outer (lexical) scope is called a closure. In JS, closures are created everytime a function is created and it is also how you have access to an outer function's scope from an inner function.
+
 4. Describe the four rules of the 'this' keyword.
 
+- Ans - There are four rules of ‘this’ keyword:
+
+    1.	Global binding – When this is called in the outermost scope / global scope, or when a function where ‘this‘ is called is contained in the global scope, it refers to the global / window object. If strict mode is enabled, this returns undefined. Otherwise, it returns the global object.
+
+    2.	Implicit binding – When a function is called with a preceding dot, for example: object1.run() , the this for the function refers to whatever object is placed before the dot.
+
+    3.	New binding – Whenever a constructor function is used to create new instances of an object using the ‘new’ keyword, the ‘this’ refers to the specific instance of the object that is created and returned by the constructor function.
+
+    4.	Explicit binding – Whenever JS methods like .call(), .apply() or .bind() are used, the first argument passed to these functions explicitly becomes the ‘this’ for the objects these functions are applied to.
+
+
 5. Why do we need super() in an extended class?
+
+- Ans - The super keyword helps us to access and call functions from a parent class / object. It is also used to pass values up to the parent constructor. It does the work that earlier was done by writing the line: 
+    ```js 
+    Child.constructor = Object.create(Parent.constructor);
+    ```
 
 ## Project Set up
 
