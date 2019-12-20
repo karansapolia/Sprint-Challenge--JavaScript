@@ -56,9 +56,9 @@ Edit this document to include your answers after each question. Make sure to lea
 5. Why do we need super() in an extended class?
 
 - Ans - The super keyword helps us to access and call functions from a parent class / object. It is also used to pass values up to the parent constructor. It does the work that earlier was done by writing the line: 
-```js 
-Child.constructor = Object.create(Parent.constructor);
-```
+    ```js 
+    Child.constructor = Object.create(Parent.constructor);
+    ```
 
 ## Project Set up
 
